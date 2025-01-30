@@ -1,0 +1,206 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Using a generic sans-serif font, you can add your own */
+  }
+  
+  body {
+      background: #F2F2F2;
+  }
+  
+  
+  /* Header Styles */
+  .header {
+    background-color: #fff;
+    padding: 20px 20px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .header-content{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      padding: 0 20px;
+  }
+  
+  .header-left{
+      display: flex;
+      align-items: center;
+  }
+  .header-name {
+    font-size: 18px;
+      font-weight: bold;
+      color: black;
+      margin-right: 5px;
+  }
+  
+  .header-editor {
+    font-size: 14px;
+      color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .header-right{
+      display: flex;
+      align-items: center;
+  }
+  
+  .header-contact {
+    font-size: 14px;
+      font-weight: 500;
+      color: black;
+      margin-right: 20px;
+      cursor: pointer;
+  }
+  .header-more {
+      font-size: 14px;
+      font-weight: 500;
+      color: black;
+      cursor: pointer;
+  }
+  /* Main Content Styles */
+  .main-content {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+  }
+  .profile-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .profile-image {
+      flex: 0 0 auto;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #bdbdbd;
+  }
+  
+  .rounded-image{
+      width: 100%;
+      height: auto;
+  }
+  
+  .profile-details {
+      flex:1;
+  }
+  
+  .main-title {
+    font-size: 80px;
+      font-weight: 700;
+      margin-bottom: 20px;
+  }
+  
+  .sub-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #828282;
+      margin-bottom: 15px;
+  }
+  
+  .profile-description {
+      font-size: 18px;
+      color: #4f4f4f;
+      margin-bottom: 25px;
+      line-height: 1.6;
+  }
+  
+  .action-buttons {
+      display: flex;
+      gap: 15px;
+  }
+  
+  .action-buttons button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .view-resume-button {
+    width: 150px;
+    height: 150px;
+    background-color: #F2994A;
+  }
+  
+  .explore-project-button {
+    width: 150px;
+    height: 150px;
+      background-color: #EB5757;
+  }
+  
+  .get-in-touch-button {
+    width: 150px;
+    height: 150px;
+    background-color: #27AE60;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-top: 1px solid #e5e5e5;
+  }
+  
+  .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+  
+  .footer-info{
+      display: flex;
+      gap: 50px;
+      flex-direction: row;
+  }
+  .footer-info p:first-child, .footer-follow p, .footer-copyright p {
+      font-size: 14px;
+      font-weight: 400;
+      color: #828282;
+      margin-bottom: 5px;
+  }
+  
+  .footer-info p:last-child{
+      font-size: 16px;
+      font-weight: 500;
+      color: #333;
+  }
+  
+  
+  .footer-follow{
+    display: flex;
+      flex-direction: column;
+      gap: 10px;
+  }
+  .social-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-link{
+    text-decoration: none;
+    font-size: 18px;
+    color: #828282;
+  }
+  
+  .footer-copyright{
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+  }
