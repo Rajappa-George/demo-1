@@ -3,63 +3,17 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif; /* Using a generic sans-serif font, you can add your own */
-  }
-  
-  body {
-      background: #F2F2F2;
-  }
-  
+    font-family: 'Roboto', sans-serif;
+  } 
   
   /* Header Styles */
-  .header {
-    background-color: #fff;
-    padding: 20px 20px;
-    border-bottom: 1px solid #e5e5e5;
+  .navbar{
+    color: black;
+    background-color: #bdbdbd;
   }
-  
-  .header-content{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 0 auto;
-      padding: 0 20px;
-  }
-  
-  .header-left{
-      display: flex;
-      align-items: center;
-  }
-  .header-name {
-    font-size: 18px;
-      font-weight: bold;
-      color: black;
-      margin-right: 5px;
-  }
-  
-  .header-editor {
-    font-size: 14px;
-      color: rgba(0, 0, 0, 0.6);
-  }
-  
-  .header-right{
-      display: flex;
-      align-items: center;
-  }
-  
-  .header-contact {
-    font-size: 14px;
-      font-weight: 500;
-      color: black;
-      margin-right: 20px;
-      cursor: pointer;
-  }
-  .header-more {
-      font-size: 14px;
-      font-weight: 500;
-      color: black;
-      cursor: pointer;
-  }
+  .header-name{
+    font-size: 2rem;
+  } 
   /* Main Content Styles */
   .main-content {
       max-width: 1000px;
@@ -116,91 +70,68 @@ body {
       line-height: 1.6;
   }
   
-  .action-buttons {
-      display: flex;
-      gap: 15px;
-  }
-  
-  .action-buttons button {
-    padding: 15px 25px;
-    border: none;
-    border-radius: 50%;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-  }
-  
-  .view-resume-button {
-    width: 150px;
-    height: 150px;
-    background-color: #F2994A;
-  }
-  
-  .explore-project-button {
-    width: 150px;
-    height: 150px;
-      background-color: #EB5757;
-  }
-  
-  .get-in-touch-button {
-    width: 150px;
-    height: 150px;
-    background-color: #27AE60;
-  }
-  
   /* Footer Styles */
   .footer {
     background-color: #fff;
-    padding: 40px 20px;
+    padding-top: 40px;
     border-top: 1px solid #e5e5e5;
   }
   
   .footer-content {
       display: flex;
-      justify-content: space-between;
-      align-items: start;
+      justify-content: space-evenly;
       max-width: 1200px;
       margin: 0 auto;
-  }
-  
-  .footer-info{
-      display: flex;
-      gap: 50px;
       flex-direction: row;
   }
+  
   .footer-info p:first-child, .footer-follow p, .footer-copyright p {
       font-size: 14px;
       font-weight: 400;
       color: #828282;
       margin-bottom: 5px;
   }
-  
-  .footer-info p:last-child{
-      font-size: 16px;
-      font-weight: 500;
-      color: #333;
-  }
-  
-  
-  .footer-follow{
-    display: flex;
-      flex-direction: column;
-      gap: 10px;
-  }
-  .social-links {
+ 
+  .social-link{
     display: flex;
     gap: 10px;
-  }
-  
-  .social-link{
     text-decoration: none;
     font-size: 18px;
     color: #828282;
   }
-  
+  .social-link
   .footer-copyright{
-      display: flex;
-      flex-direction: column;
-      text-align: right;
+    background-color: #F2F2F2;
+    text-align: center;
+    padding: 10px 0px;
   }
+  /* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Button Hover Effect */
+.back-to-top:hover {
+  background-color: #0056b3;
+}
+
+/* Button Animation */
+.back-to-top.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
